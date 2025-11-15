@@ -261,7 +261,6 @@ OverworldLoopLessDelay::
 .normalPlayerSpriteAdvancement
 	ld a, [wNoSprintSteps]
 	cp 0
-	jr nz, .notRunning ; Don't sprite right after jumping a ledge
 	; Make you surf at bike speed
 	ld a,[wWalkBikeSurfState]
 	cp a, $02
